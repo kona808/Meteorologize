@@ -9,21 +9,35 @@ import UIKit
 
 class CityDetailViewController: UIViewController {
 
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var currentStatusLabel: UILabel!
+    @IBOutlet weak var currentTempLabel: UILabel!
+    @IBOutlet weak var dailyHighLabel: UILabel!
+    @IBOutlet weak var dailyLowLabel: UILabel!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Methods
+    func updateViews() {
+        // We need to go to our sharedInstance, grab a City from array cities bring it back and use it to populate our labels.
+        // How do we call our shared instance?
+        let city = CityController.sharedInstance.cities[0]
+        cityNameLabel.text = city.name
+        currentStatusLabel.text = city.currentStatus
+        currentTempLabel.text = "Current Status: \(city.currentTemp)"
+        dailyHighLabel.text = "Daily High: \(city.dailyHigh)"
+        dailyLowLabel.text = "Daily Low: \(city.dailyLow)"
+        
+        // Ternary
+        self.view.backgroundColor = city.currentTemp <= 80 ? .systemBlue : .red
     }
-    */
-
-}
+    
+} // End of class
