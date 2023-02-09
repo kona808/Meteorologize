@@ -10,10 +10,11 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Insert my own data into the app.
+        // sharedInstance is a property of CityControllers, because it is static we can use it across all files of CityControllers' so every time we use dot sharedInstance we are using that specific memory address.
+        CityController.sharedInstance.createCity(name: "Honolulu", currentTemp: 72, dailyHigh: 79, dailyLow: 71, currentStatus: "Breezy")
         
         return true
     }

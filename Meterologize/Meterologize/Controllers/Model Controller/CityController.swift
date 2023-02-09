@@ -10,6 +10,7 @@ import Foundation
 class CityController {
     
     // MARK:- Properties
+    static let sharedInstance = CityController()
     var cities: [City] = []
     
     
