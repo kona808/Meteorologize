@@ -35,34 +35,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41A688BE26CED7FD00F1F958 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				41A688BF26CED80B00F1F958 /* Model Controllers */,
-				41A688C026CED81400F1F958 /* View Controllers */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		41A688BF26CED80B00F1F958 /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
-		41A688C026CED81400F1F958 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
 		41E6C3D826CECD1F00C8215E = {
 			isa = PBXGroup;
 			children = (
 				41E6C3E326CECD1F00C8215E /* Meterologize */,
-				41A688BE26CED7FD00F1F958 /* Controllers */,
 				41E6C3E226CECD1F00C8215E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,8 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				41E6C3F826CED55D00C8215E /* Supporting Files */,
+				FFB8294629949D5A001E0239 /* Model */,
+				FFB8294529949D4B001E0239 /* Controllers */,
 				41E6C3F926CED59900C8215E /* Storyboards */,
-				41E6C3FC26CED5DD00C8215E /* Model */,
 			);
 			path = Meterologize;
 			sourceTree = "<group>";
@@ -105,11 +82,34 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		41E6C3FC26CED5DD00C8215E /* Model */ = {
+		FFB8294529949D4B001E0239 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB8294829949D74001E0239 /* View Controllers */,
+				FFB8294729949D66001E0239 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFB8294629949D5A001E0239 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FFB8294729949D66001E0239 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FFB8294829949D74001E0239 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
