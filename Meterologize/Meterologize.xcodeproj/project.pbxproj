@@ -12,6 +12,8 @@
 		41E6C3EC26CECD1F00C8215E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E6C3EA26CECD1F00C8215E /* Main.storyboard */; };
 		41E6C3EE26CECD2100C8215E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E6C3ED26CECD2100C8215E /* Assets.xcassets */; };
 		41E6C3F126CECD2100C8215E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E6C3EF26CECD2100C8215E /* LaunchScreen.storyboard */; };
+		FFB8294A2994A041001E0239 /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB829492994A041001E0239 /* CityController.swift */; };
+		FFB8294C2994A0D2001E0239 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8294B2994A0D2001E0239 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		41E6C3ED26CECD2100C8215E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E6C3F026CECD2100C8215E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E6C3F226CECD2100C8215E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB829492994A041001E0239 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
+		FFB8294B2994A0D2001E0239 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		FFB8294629949D5A001E0239 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FFB8294B2994A0D2001E0239 /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		FFB8294729949D66001E0239 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FFB829492994A041001E0239 /* CityController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			files = (
 				41E6C3E526CECD1F00C8215E /* AppDelegate.swift in Sources */,
 				41E6C3E726CECD1F00C8215E /* SceneDelegate.swift in Sources */,
+				FFB8294C2994A0D2001E0239 /* City.swift in Sources */,
+				FFB8294A2994A041001E0239 /* CityController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
