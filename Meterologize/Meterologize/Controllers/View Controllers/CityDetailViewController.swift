@@ -18,6 +18,9 @@ class CityDetailViewController: UIViewController {
     @IBOutlet weak var dailyHighLabel: UILabel!
     @IBOutlet weak var dailyLowLabel: UILabel!
     
+    // MARK: - Properties
+    var objectToRecieveTheDataFromOurPrepareForSegue: City?
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,7 @@ class CityDetailViewController: UIViewController {
     func updateViews() {
         // We need to go to our sharedInstance, grab a City from array cities bring it back and use it to populate our labels.
         // How do we call our shared instance?
-        let city = CityController.sharedInstance.cities[0]
+       guard let city = objectToRecieveTheDataFromOurPrepareForSegue else { return }
         cityNameLabel.text = city.name
         currentStatusLabel.text = city.currentStatus
         currentTempLabel.text = "Current Status: \(city.currentTemp)"

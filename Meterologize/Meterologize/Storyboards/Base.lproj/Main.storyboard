@@ -73,7 +73,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="eFY-nl-U2a" kind="show" id="3HM-RV-Yu5"/>
+                                    <segue destination="eFY-nl-U2a" kind="show" identifier="toDetailViewController" id="3HM-RV-Yu5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,6 +84,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Dvo-Tf-V8C">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XrT-wA-uHC">
+                            <color key="tintColor" systemColor="tintColor"/>
                             <connections>
                                 <action selector="addCityButtonTapped:" destination="qdL-WZ-JHP" id="9wF-m9-rX4"/>
                             </connections>
@@ -149,6 +150,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ope-ZZ-PyC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4Fd-32-rhR" firstAttribute="top" secondItem="Ope-ZZ-PyC" secondAttribute="top" constant="75" id="JqR-Vt-Csg"/>
                             <constraint firstItem="4Fd-32-rhR" firstAttribute="centerX" secondItem="Ope-ZZ-PyC" secondAttribute="centerX" id="OZ7-gm-W9V"/>
@@ -190,12 +192,16 @@
             <point key="canvasLocation" x="-527.48091603053433" y="-42.253521126760567"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

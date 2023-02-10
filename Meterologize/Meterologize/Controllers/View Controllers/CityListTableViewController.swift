@@ -52,8 +52,8 @@ class CityListTableViewController: UITableViewController {
         // How do we put text on the cell?
         // city.name will show the name in all the cells if it is not specified
         // Code below will be deprecated in the future.
-//        cell.textLabel?.text = cityForIndex.name
-//        cell.detailTextLabel?.text = "\(cityForIndex.currentTemp)"
+        //        cell.textLabel?.text = cityForIndex.name
+        //        cell.detailTextLabel?.text = "\(cityForIndex.currentTemp)"
         // New/ Future way to write text, we create the configuration, then assign it to the cell.
         var config = cell.defaultContentConfiguration()
         config.text = cityForIndex.name
@@ -71,16 +71,24 @@ class CityListTableViewController: UITableViewController {
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Index - Discovering what row the user has selected
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        
-        /// Index - Discovering what row the user has seleceted
-        
-        /// Destination - Verifying the segues destination leads to the *ViewController* we want. This also allows us to access the properties on that *ViewController*
-        
-        /// Object to send - Using the index we discovered earlier we retrieve the *City* that matches in our *cities* array.
-        
-        /// Object to receive - Sets the value of the optional *city* on the *destination* to the *city* we just retrived.
+        /// What segue has been triggered?
+        if segue.identifier == "toDetailViewController" {
+            /// Index - Discovering what row the user has seleceted
+            /// What cell did the user tap on?
+            if let index = tableView.indexPathForSelectedRow {
+                /// Destination - Verifying the segues destination leads to the *ViewController* we want. This also allows us to access the properties on that *ViewController*
+                /// Where is the user going?
+                if let destination = segue.destination as? CityDetailViewController {
+                    /// Object to send - Using the index we discovered earlier we retrieve the *City* that matches in our *cities* array.
+                    /// What object am I sending to the detail VC?
+                    let city = CityController.sharedInstance.cities[index.row]
+                    /// Object to receive - Sets the value of the optional *city* on the *destination* to the *city* we just retrived.
+                    /// What object is recieving the data? The city
+                    destination.objectToRecieveTheDataFromOurPrepareForSegue = city
+                }
+            }
+        }
     }
 } // End of class
