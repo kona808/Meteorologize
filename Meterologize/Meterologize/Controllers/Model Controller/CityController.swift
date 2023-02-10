@@ -16,7 +16,7 @@ class CityController {
     
     // What do we need to create a City? Anything that doesn't have a defauly value.
     // tell the parameters what to expect.. What information am I going to need?
-    func createCity(name: String, currentTemp: Double, dailyHigh: Int, dailyLow: Int, currentStatus: String) {
+    func createCity(name: String, currentTemp: Double, dailyHigh: Int? = nil, dailyLow: Int? = nil, currentStatus: String? = nil) {
         // How are we going to make a City from these parameters?
         // Call a function we've made
         let newCity = City(name: name, currentTemp: currentTemp, dailyHigh: dailyHigh, dailyLow: dailyLow, currentStatus: currentStatus)

@@ -33,8 +33,8 @@ class CityDetailViewController: UIViewController {
         cityNameLabel.text = city.name
         currentStatusLabel.text = city.currentStatus
         currentTempLabel.text = "Current Status: \(city.currentTemp)"
-        dailyHighLabel.text = "Daily High: \(city.dailyHigh)"
-        dailyLowLabel.text = "Daily Low: \(city.dailyLow)"
+        dailyHighLabel.text = "Daily High: \(city.dailyHigh ?? 0)"
+        dailyLowLabel.text = "Daily Low: \(city.dailyLow ?? 0)"
         
         // Ternary
         self.view.backgroundColor = city.currentTemp <= 80 ? .systemBlue : .red

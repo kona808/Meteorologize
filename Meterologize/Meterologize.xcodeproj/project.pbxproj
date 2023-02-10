@@ -15,6 +15,7 @@
 		FFB8294A2994A041001E0239 /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB829492994A041001E0239 /* CityController.swift */; };
 		FFB8294C2994A0D2001E0239 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8294B2994A0D2001E0239 /* City.swift */; };
 		FFB8294E29952694001E0239 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8294D29952694001E0239 /* CityDetailViewController.swift */; };
+		FFB8295029953660001E0239 /* CityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8294F29953660001E0239 /* CityListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FFB829492994A041001E0239 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
 		FFB8294B2994A0D2001E0239 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		FFB8294D29952694001E0239 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		FFB8294F29953660001E0239 /* CityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB8294D29952694001E0239 /* CityDetailViewController.swift */,
+				FFB8294F29953660001E0239 /* CityListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				41E6C3E726CECD1F00C8215E /* SceneDelegate.swift in Sources */,
 				FFB8294C2994A0D2001E0239 /* City.swift in Sources */,
 				FFB8294A2994A041001E0239 /* CityController.swift in Sources */,
+				FFB8295029953660001E0239 /* CityListTableViewController.swift in Sources */,
 				FFB8294E29952694001E0239 /* CityDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = D23NK3BZLQ;
 				INFOPLIST_FILE = "Meterologize/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = D23NK3BZLQ;
 				INFOPLIST_FILE = "Meterologize/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
